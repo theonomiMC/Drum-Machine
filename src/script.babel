@@ -1,0 +1,36 @@
+function text(str){
+  var txt=document.getElementById("display").innerHTML=str;
+}
+function play(str) {
+          var audio = document.getElementById(str);       
+          audio.play();  
+        }
+       window.document.onkeyup=function(e){
+        if(e.key === "q" || e.key === "Q"){
+          play("Q");
+        }
+        if(e.key === "w" || e.key === "W"){
+          play("W")
+        }
+        if(e.key === "e" || e.key === "E"){
+          play("E")
+        }
+        if(e.key === "a" || e.key === "A"){
+          play("A")
+        }
+        if(e.key === "s" || e.key === "S"){
+          play("S")
+        }
+        if(e.key === "d" || e.key === "D"){
+          play("D")
+        }
+        if(e.key === "z" || e.key === "Z"){
+          play("Z")
+        }
+        if(e.key === "x" || e.key === "X"){
+          play("X")
+        }
+        if(e.key === "c" || e.key === "C"){
+          play("C")
+        }
+       }

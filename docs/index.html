@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Drum Machine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+ 
+  <div class="header" id="drum-machine">Drum Machine </div>
+  <div class="row">
+    <div class="col">
+
+      <div class="drum-box">
+        <button class="drum-pad" id="0" onclick="play('Q');text('Duke')">Q
+          <audio src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Jam_C_with_Blue_accompanyment.ogg" id="Q"
+            class="clip"></audio>
+        </button>
+
+        <button class="drum-pad" id="1" onclick="play('W');text('Drum 1')">W
+          <audio src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Jazz_Drums.ogg" id="W" class="clip"></audio>
+        </button>
+
+        <button class="drum-pad" id="2" onclick="play('E');text('Jazz')">E
+          <audio src="https://upload.wikimedia.org/wikipedia/commons/9/93/Nl-jazz.ogg" id="E" class="clip"></audio>
+        </button>
+
+        <button class="drum-pad" id="3" onclick="play('A');text('Drum')">A
+          <audio
+            src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Kevin_MacLeod_assorted_rimshots_-_D-dum-ping.wav"
+            id="A" class="clip"></audio>
+        </button>
+
+        <button class="drum-pad" id="4" onclick="play('S');text('Guitar')">S
+          <audio src="https://upload.wikimedia.org/wikipedia/commons/4/40/Jazz-Guitar.ogg" id="S" class="clip"></audio>
+        </button>
+
+        <button class="drum-pad" id="5" onclick="play('D');text('Bass')">D
+          <audio src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Four_feel_walking_bass_B.ogg" id="D"
+            class="clip"></audio>
+        </button>
+
+        <button class="drum-pad" id="6" onclick="play('Z');text('Drum 2')">Z
+          <audio src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ride.ogg" id="Z" class="clip">
+        </button>
+
+        <button class="drum-pad" id="7" onclick="play('X');text('Viol')">X
+          <audio src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Jazz_violin.ogg" id="X" class="clip"></audio>
+        </button>
+
+        <button class="drum-pad" id="8" onclick="play('C');text('Clarnet')">C
+          <audio src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Jazz_Clarinet.ogg" id="C"
+            class="clip"></audio>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div id="display">
+        <img src="https://www.shareicon.net/data/128x128/2016/02/17/720418_music_512x512.png">
+      </div>
+    </div>
+
+  </div>
+  <!-- javascript files -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

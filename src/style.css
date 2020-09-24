@@ -1,0 +1,124 @@
+ @import 
+ url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+ 
+
+html { font-size: 22px; }
+body{
+  position: relative;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  height:100%;
+}
+body::after { 
+  content:"";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+/*   background-image: url(https://images.unsplash.com/photo-1489781879256-fa824b56f24f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80); */
+  background-image: url(https://images.unsplash.com/photo-1531505791729-054361374207?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+ opacity: 0.6;
+}
+.col {
+/*   background-color: dodgerblue; */
+  color: white;
+  padding: 1rem;
+  height: 10rem;
+  
+}
+.row {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+.drum-box{
+  position: relative;
+  width:270px;
+  padding-left:20px;
+  height:250px;
+/*   background:red; */
+  margin: auto;
+  padding:10px;
+}
+.drum-pad{
+  display:inline-block;
+  width: 70px;
+  height:70px;
+  margin:5px;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  color:#fff;
+  background-color:#212121;
+  overflow: hidden;
+  border:none;
+  transition: all 0.2s;
+  border-radius: 5px;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+}
+.drum-pad:hover {
+  background-color: #f14e4e;
+  border: none;
+}
+
+
+#header {
+  padding: 50px;
+  text-align:center;
+  font-size: 3.5em;
+  font-weight:bold;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 10px;
+  color:#212121;
+  text-shadow: 2px 2px 4px gray;
+  
+}
+.bouncy{
+ animation:bouncy 5s infinite linear;
+ position:relative;
+}
+@keyframes bouncy {
+ 0%{top:0em}
+ 40%{top:0em}
+ 43%{top:-0.9em}
+ 46%{top:0em}
+ 48%{top:-0.4em}
+ 50%{top:0em}
+ 100%{top:0em;}
+}
+#display{
+  margin: auto;
+  display: flex;
+  width:250px;
+  height: 230px;
+  color:#222222;
+  padding: 10px;
+  align-items: center;
+  justify-content:center;
+  font-size: 2.2em;
+  font-family: 'Lemonada', cursive;
+  box-shadow: 5px 10px #212121;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height:auto;
+  opacity:0.9;
+}
+@media (min-width: 712px) {
+  .row { grid-template-columns: repeat(2, 1fr); }
+  html, body {
+  height: 100%;
+}
+}
